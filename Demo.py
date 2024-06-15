@@ -1,5 +1,11 @@
 import streamlit as st
-from streamlit_navigation_bar import st_navbar
+import pandas as pd
 
-st.title("Hello, Rakshit there")
-page = st_navbar(["Home", "Documentation", "Examples", "Community", "About"])
+data = {
+    'Fruit': ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry'],
+    'Quantity': [10, 15, 20, 25, 30],
+    'Price': [0.5, 0.25, 0.75, 1.0, 2.0]
+}
+df = pd.DataFrame(data)
+
+st.dataframe(df)
