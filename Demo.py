@@ -1,6 +1,8 @@
 import streamlit as st
 
-from src.agstyler import PINLEFT, PRECISION_TWO, draw_grid
+from src.agstyler import PINLEFT 
+from src.agstyler import PRECISION_TWO
+from src.agstyler import draw_grid
 
 formatter = {
     'player_name': ('Player', PINLEFT),
