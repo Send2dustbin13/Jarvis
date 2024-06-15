@@ -1,4 +1,5 @@
 import streamlit as st
+import ppandas as pd
 from st_aggrid import Agrid
 
 data = {
